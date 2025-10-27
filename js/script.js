@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const msg = produto
       ? `Olá! Gostaria de saber mais sobre ${produto}.`
       : `Olá! Quero agendar uma visita.`;
-    const link = `https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`;
+    const link = `https://wa.me/5519999861345?text=${encodeURIComponent(msg)}`;
     window.open(link, '_blank');
   }
   
