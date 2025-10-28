@@ -24,28 +24,45 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Carrossel
   let index = 0;
+
   function moverCarrossel(dir) {
     const track = document.querySelector('.carousel-track');
     const cards = document.querySelectorAll('.produto-card');
     const total = cards.length;
-    const visible = Math.floor(track.offsetWidth / 240);
+  
+    // largura do card + margem (gap)
+    const style = getComputedStyle(cards[0]);
+    const cardWidth = cards[0].offsetWidth + parseInt(style.marginRight);
+  
+    // quantos cards cabem na tela
+    const visible = Math.floor(track.parentElement.offsetWidth / cardWidth);
+  
+    // atualiza índice sem passar do limite
     index = Math.max(0, Math.min(total - visible, index + dir));
-    track.style.transform = `translateX(-${index * 252}px)`;
+  
+    // move o track
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
   }
-  const track = document.querySelector('.carousel-track');
-const leftBtn = document.querySelector('.carousel-btn.left');
-const rightBtn = document.querySelector('.carousel-btn.right');
+  
 
 let scrollAmount = 0;
 
 rightBtn.addEventListener('click', () => {
-  const width = track.querySelector('.carousel-item').offsetWidth + 12; // + gap
+  const width = track.querySelector('.carousel-item').offsetWidth + 19; // + gap
   track.scrollBy({ left: width, behavior: 'smooth' });
 });
 
 leftBtn.addEventListener('click', () => {
-  const width = track.querySelector('.carousel-item').offsetWidth + 12;
+  const width = track.querySelector('.carousel-item').offsetWidth + 15;
   track.scrollBy({ left: -width, behavior: 'smooth' });
 });
 
+
+
+
+function abrirProduto(pagina) {
+  window.location.href = pagina;
+}
+
+  
   
