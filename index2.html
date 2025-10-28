@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fb Fitness — Detalhes do Produto</title>
+  <meta name="description" content="Veja os detalhes deste produto da Fb Fitness e fale conosco no WhatsApp para saber mais.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    
+
+
+
+    body{
+        display: block;
+    }
+    
+    .produto-detalhe {
+      max-width: 1100px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .produto-detalhe img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    .produto-info h1 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      color: var(--accent, #00c36f);
+    }
+    .produto-info p {
+      color: var(--muted, #ccc);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .produto-info ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    .preco {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent, #00c36f);
+      margin-bottom: 20px;
+    }
+    .btn-wpp {
+      background: linear-gradient(90deg, #25d366, #128c7e);
+      color: white;
+      border: 0;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease;
+    }
+    .btn-wpp:hover {
+      transform: scale(1.04);
+    }
+
+    @media (max-width: 768px) {
+      .produto-detalhe {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header style="padding:20px 40px;display:flex;justify-content:space-between;align-items:center;">
+  
+    <div class="brand" style="display:flex;align-items:center;gap:10px;">
+      
+     
+</div>
+  </header>
+
+  <section class="produto-detalhe">
+    <div class="produto-img">
+      <img src="./images/image.png" alt="Whey Protein">
+    </div>
+    <div class="produto-info">
+      <h1>Whey Protein Premium</h1>
+      <p>Nosso Whey Protein Premium é formulado com proteínas de alto valor biológico, ideal para recuperação e ganho de massa magra.</p>
+      <ul>
+        <li>25g de proteína por dose</li>
+        <li>Sem adição de açúcares</li>
+        <li>Rápida absorção</li>
+        <li>Sabores: Baunilha, Chocolate e Morango</li>
+      </ul>
+      <div class="preco">R$ 149,90</div>
+      <button class="btn-wpp" onclick="abrirWhatsApp('Whey Protein Premium')">
+        💬 Falar no WhatsApp
+      </button>
+     
+  <footer style="text-align:center;padding:30px;color:#999;font-size:14px;">
+    © 2025 Fb Fitness — Todos os direitos reservados
+  </footer>
+</div>
+<div class="voltar-caixa">
+    <a href="index.html" style="color:#33b400;text-decoration:none;">Voltar</a>  
+</div>
+
+</section>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
