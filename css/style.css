@@ -35,6 +35,14 @@ header {
   display: flex; align-items: center; justify-content: center;
   font-weight: 800; color: #071018; font-size: 18px;
 }
+
+.logo img{
+ width: 70px;
+ display: flex;
+ height: auto;
+
+
+}
 nav { display: flex; gap: 12px; }
 nav a { color: var(--muted); text-decoration: none; font-weight: 600; padding: 8px 12px; border-radius: 8px; }
 nav a.cta { background: linear-gradient(90deg,var(--accent),#ff8f3c); color: #071018; }
@@ -119,7 +127,7 @@ h2 { margin-bottom: 14px; font-size: 28px; }
   flex-shrink: 0;
 }
 .produto-card img {
-  width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;
+  width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 8px;
 }
 .produto-card h4 { margin-bottom: 4px; }
 .produto-card p { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
@@ -398,3 +406,199 @@ footer { text-align: center; margin-top: 40px; padding: 18px; color: var(--muted
   }
 }
 
+/* Botões dos produtos */
+.botoes-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+  .botoes-produto {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.btn-detalhes {
+  background: black;
+  color: var(--preto);
+  border: 2px solid var(--verde);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-detalhes:hover {
+  background: var(--verde);
+  color: rgb(51, 255, 0);
+}
+
+.voltar-caixa {
+  background: var(--verde);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+  transition: 0.3s;
+}
+
+/* transforma o link em bloco clicável */
+.voltar-caixa a {
+  display: block;        /* faz o link ocupar toda a caixa */
+  color: inherit;        /* usa a cor da div */
+  text-decoration: none; /* remove o sublinhado */
+  width: 100%;
+  height: 100%;
+}
+
+/* hover bonitinho */
+.voltar-caixa:hover {
+  background: var(--dourado);
+  color: var(--preto);
+  transform: scale(1.05);
+}
+
+/* Correção de alinhamento no produto.html para mobile */
+@media (max-width: 900px) {
+  .produto-detalhe {
+    grid-template-columns: 1fr;   /* uma coluna só */
+    padding: 20px;                /* margem lateral */
+    text-align: center;           /* centraliza tudo */
+  }
+
+  .produto-detalhe img {
+    max-width: 100%;
+    margin: 0 auto;               /* centraliza imagem */
+  }
+
+  .produto-info {
+    text-align: center;           /* centraliza textos e botões */
+  }
+
+  .produto-info ul {
+    text-align: left;             /* lista alinhada à esquerda (pra não ficar estranho) */
+    display: inline-block;        /* mantém lista centralizada */
+    margin: 0 auto 20px;
+  }
+
+  header {
+    justify-content: center !important;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+
+/* Centralizar o conteúdo da página de produto */
+.produto-detalhe {
+  max-width: 1100px;
+  margin: 60px auto;
+  display: flex;               /* muda pra flex */
+  flex-direction: column;      /* tudo em coluna */
+  align-items: center;         /* centraliza horizontalmente */
+  justify-content: center;     /* centraliza verticalmente */
+  text-align: center;          /* centraliza texto */
+  padding: 20px;
+}
+
+/* imagem centralizada */
+.produto-detalhe img {
+  width: 100%;
+  max-width: 420px;            /* limite da imagem */
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* texto e botão centralizados */
+.produto-info {
+  max-width: 600px;
+  text-align: center;
+}
+
+.produto-info ul {
+  list-style: disc;
+  display: inline-block;       /* lista centralizada */
+  text-align: left;            /* mas texto alinhado à esquerda */
+  margin: 0 auto 20px;
+  padding-left: 20px;
+}
+
+.produto-info button {
+  margin-top: 10px;
+}
+
+/* RODAPÉ FINAL */
+.rodape-final {
+  background: var(--preto);
+  color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 8%;
+  text-align: center;
+  border-top: 2px solid var(--verde);
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-infos p {
+  font-size: 0.9em;
+  color: #d1d5db;
+}
+
+.footer-redes {
+  display: flex;
+  gap: 14px;
+  font-size: 1.6em;
+}
+
+.footer-redes a {
+  color: var(--branco);
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.footer-redes a:hover {
+  background-color: #1d2423;
+  color: var(--azul);
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .rodape-final {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
