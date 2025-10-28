@@ -8,6 +8,8 @@
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <div class="container" role="main">
@@ -15,7 +17,7 @@
     <!-- HEADER -->
     <header>
       <div class="brand">
-        <div class="logo">FB</div>
+        <div class="logo"><img src="./images/image copy.png" alt=""></div>
         <div>
           <div style="font-weight:800">Fb Fitness</div>
           <div style="font-size:12px;color:var(--muted)">Treine mais, viva melhor</div>
@@ -45,9 +47,10 @@
       <h2>Sobre Nós</h2>
       <p>Somos uma academia que vai além dos treinos. Oferecemos acompanhamento físico, nutricional e psicológico para ajudar você a atingir seus objetivos com saúde e motivação.</p>
       <div class="features">
-        <div class="feature"><h4>+500m² de estrutura</h4><p>Equipamentos de ponta e ambiente climatizado.</p></div>
+        <div class="feature"><h4>Aparelhos de Qualidade</h4><p>Equipamentos de ponta e ambiente climatizado.</p></div>
         <div class="feature"><h4>Equipe Qualificada</h4><p>Treinadores certificados e especialistas em performance.</p></div>
-        <div class="feature"><h4>Aberto 24h</h4><p>Treine quando quiser, com total segurança e conforto.</p></div>
+        <div class="feature"><h4>Horarios dinâmicos</h4><p>Seg-Sex (05:00-11:00) e (14:00-21:00)  </p><p>      
+          Sáb (07:00-11:00) </p></div>
       </div>
     </section>
 
@@ -56,21 +59,16 @@
       <h2>Serviços</h2>
       <div class="plans">
         <article class="plan">
-          <h3>Musculação</h3>
-          <ul><li>Equipamentos novos</li><li>Treino personalizado</li><li>Ambiente climatizado</li></ul>
+          <h3>Plano básico</h3>
+          <ul><li>R$90,00 por mês</li><li>Treine 3x na semana</li><li>Custo-Benefício</li></ul>
           <button class="btn primary" onclick="abrirWhatsApp('Musculação')">Mais infos</button>
         </article>
         <article class="plan">
-          <h3>Treino Funcional</h3>
-          <ul><li>Turmas pequenas</li><li>Alta intensidade</li><li>Foco em resultados</li></ul>
+          <h3>Plano Premium</h3>
+          <ul><li>R$120,00 por mês</li><li>Treine 6x na semana</li><li>Popular</li></ul>
           <button class="btn primary" onclick="abrirWhatsApp('Treino Funcional')">Mais infos</button>
         </article>
-        <article class="plan">
-          <h3>Personal Trainer</h3>
-          <ul><li>Treino 1:1</li><li>Consultoria exclusiva</li><li>Planos mensais</li></ul>
-          <button class="btn primary" onclick="abrirWhatsApp('Personal Trainer')">Mais infos</button>
-        </article>
-      </div>
+       
     </section>
 
     <!-- PRODUTOS (CARROSSEL) -->
@@ -78,24 +76,89 @@
       <h2>Nossos Produtos</h2>
       <div class="carousel">
         <button class="carousel-btn prev" onclick="moverCarrossel(-1)">‹</button>
+    
         <div class="carousel-track">
-          <!-- Cada item -->
-          <div class="produto-card"><img src="./images/image.png" alt="Whey Protein"><h4>Whey Protein</h4><p>Proteína pura de alta qualidade.</p><button class="btn primary" onclick="abrirWhatsApp('Whey Protein')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800" alt="Creatina"><h4>Creatina</h4><p>Melhore força e resistência.</p><button class="btn primary" onclick="abrirWhatsApp('Creatina')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1617137984095-0c4e0a8e8b4a?q=80&w=800" alt="Pré-treino"><h4>Pré-treino</h4><p>Energia máxima para seus treinos.</p><button class="btn primary" onclick="abrirWhatsApp('Pré-treino')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1592439900716-3f7b6e9a1f44?q=80&w=800" alt="BCAA"><h4>BCAA</h4><p>Recuperação muscular avançada.</p><button class="btn primary" onclick="abrirWhatsApp('BCAA')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1556228724-4f3865a7e4d0?q=80&w=800" alt="Glutamina"><h4>Glutamina</h4><p>Imunidade e recuperação.</p><button class="btn primary" onclick="abrirWhatsApp('Glutamina')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1579722827521-3a7e1b19b8d8?q=80&w=800" alt="Termogênico"><h4>Termogênico</h4><p>Queima de gordura otimizada.</p><button class="btn primary" onclick="abrirWhatsApp('Termogênico')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1605296866985-34ba3a3ec94c?q=80&w=800" alt="Colágeno"><h4>Colágeno</h4><p>Pele, articulações e ossos fortes.</p><button class="btn primary" onclick="abrirWhatsApp('Colágeno')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1604908176997-5e3b57a3b96b?q=80&w=800" alt="Omega 3"><h4>Ômega 3</h4><p>Saúde do coração e do cérebro.</p><button class="btn primary" onclick="abrirWhatsApp('Ômega 3')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1590487986931-27d21c8b6a38?q=80&w=800" alt="Shaker"><h4>Shaker</h4><p>Para misturar suplementos.</p><button class="btn primary" onclick="abrirWhatsApp('Shaker')">Mais infos</button></div>
-          <div class="produto-card"><img src="https://images.unsplash.com/photo-1583511655826-05700d52f4b4?q=80&w=800" alt="Camiseta GYM"><h4>Camiseta GYM</h4><p>Conforto e estilo nos treinos.</p><button class="btn primary" onclick="abrirWhatsApp('Camiseta GYM')">Mais infos</button></div>
+          <!-- Produto 1 -->
+          <div class="produto-card">
+            <img src="./images/image.png" alt="Whey Protein">
+            <h4>Whey Protein</h4>
+            <p>Proteína pura de alta qualidade.</p>
+    
+            <div class="botoes-produto">
+              <button class="btn primary" onclick="abrirWhatsApp('Tenho interesse no Whey Protein')">
+                Chamar no WhatsApp
+              </button>
+              <button class="btn-detalhes" onclick="abrirProduto('index2.html')">
+                Mais informações
+              </button>
+            </div>
+          </div>
+    
+          <!-- Produto 2 -->
+          <div class="produto-card">
+            <img src="./images/creatina.jpeg" alt="Creatina">
+            <h4>Creatina</h4>
+            <p>Melhore força e resistência.</p>
+    
+            <div class="botoes-produto">
+              <button class="btn primary" onclick="abrirWhatsApp('Tenho interesse na Creatina')">Chamar no WhatsApp</button>
+              <button class="btn-detalhes" onclick="abrirProduto('produto-creatina.html')">Mais informações</button>
+            </div>
+          </div>
+    
+          <!-- Produto 3 -->
+          <div class="produto-card">
+            <img src="./images/pré-treino.jpeg" alt="Pré-treino">
+            <h4>Pré-treino</h4>
+            <p>Energia máxima para seus treinos.</p>
+    
+            <div class="botoes-produto">
+              <button class="btn primary" onclick="abrirWhatsApp('Tenho interesse no Pré-treino')">Chamar no WhatsApp</button>
+              <button class="btn-detalhes" onclick="abrirProduto('produto-pretreino.html')">Mais informações</button>
+            </div>
+          </div>
+    
+          <!-- Produto 4 -->
+          <div class="produto-card">
+            <img src="./images/BCAA.jpeg"  alt="BCAA">
+            <h4>BCAA</h4>
+            <p>Recuperação muscular avançada.</p>
+             
+            <div class="botoes-produto">
+              <button class="btn primary" onclick="abrirWhatsApp('Tenho interesse no BCAA')">Chamar no WhatsApp</button>
+              <button class="btn-detalhes" onclick="abrirProduto('produto-bcaa.html')">Mais informações</button>
+            </div>
+          </div>
+    
+          <!-- Produto 5 -->
+          <div class="produto-card">
+            <img src="./images/gluta.jpeg" alt="Glutamina">
+            <h4>Glutamina</h4>
+            <p>Imunidade e recuperação.</p>
+    
+            <div class="botoes-produto">
+              <button class="btn primary" onclick="abrirWhatsApp('Tenho interesse na Glutamina')">Chamar no WhatsApp</button>
+              <button class="btn-detalhes" onclick="abrirProduto('produto-glutamina.html')">Mais informações</button>
+            </div>
+          </div>
+    
+          <!-- Produto 6 -->
+          <div class="produto-card">
+            <img src="./images/termo.jpeg" alt="Termogênico">
+            <h4>Termogênico</h4>
+            <p>Queima de gordura otimizada.</p>
+    
+            <div class="botoes-produto">
+              <button class="btn primary" onclick="abrirWhatsApp('Tenho interesse no Termogênico')">Chamar no WhatsApp</button>
+              <button class="btn-detalhes" onclick="abrirProduto('produto-termogenico.html')">Mais informações</button>
+            </div>
+          </div>
         </div>
+    
         <button class="carousel-btn next" onclick="moverCarrossel(1)">›</button>
-        
       </div>
     </section>
-
+    
     <!-- DEPOIMENTOS -->
     <section id="depoimentos" class="testimonials">
      
@@ -104,14 +167,30 @@
     </section>
 
     <!-- CONTATO -->
-    <footer id="contato">
-      <div>Quer saber mais? Agende uma visita ou envie mensagem pelo WhatsApp.</div>
-      <small>Endereço: Rua Exemplo, 123 — Cidade • Tel: (00) 00000-0000</small>
+    <footer class="rodape-final">
+      <div class="footer-logo">
+        <img src="./images/fblogo.jpeg" alt="Logo da Academia" />
+        <p><strong>Fb Fitness</strong></p>
+      </div>
+    
+      <div class="footer-infos">
+        <p>CNPJ: 12.345.678/0001-90</p>
+        <p>© 2025 Fb Fitness — Todos os direitos reservados</p>
+      </div>
+    
+      <div class="footer-redes">
+        <a href="https://www.instagram.com/fbfitnessacademia/" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/fbfitnessacademia/" target="_blank" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </div>
     </footer>
-  </div>
+    
 
   <!-- BOTÃO FIXO WHATSAPP -->
-  <a class="wa" href="https://wa.me/5519999861345?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20a%20academia." target="_blank">
+  <a class="wa" href="https://wa.me/5519999861345?text=${encodeURIComponent(msg)}" target="_blank">
     💬 Fale Conosco
   </a>
 
